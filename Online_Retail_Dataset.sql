@@ -25,7 +25,7 @@ WHERE CustomerID IS NULL
 -- Remove rows with NULL CustomerID or zero sales
 DELETE FROM Online_retailclean
 WHERE CustomerID IS NULL 
-   OR Quantity = 0 
+   OR Quantity = 0   --In this process I am removing the 0 Quantity because there is no selling SO ther is no profit or loss--
    OR UnitPrice = 0;
 
 --------------------------------------------------
